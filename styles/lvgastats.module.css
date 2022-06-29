@@ -1,0 +1,23 @@
+.box {
+	height: 600px;
+	color: aliceblue;
+	text-align: center;
+	padding-top: 150px;
+}
+
+.title {
+	height: fit-content;
+}
+
+.speed {
+	padding-top: 150px;
+	margin-top: -70px;
+}
+
+.buttonGroup {
+	padding: 5px;
+}
+
+.button {
+	padding: 5px 20px !important;
+}
