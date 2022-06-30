@@ -18,14 +18,15 @@ export function getDayTransactionCount(dataJson) {
 			date1 = new Date(dataJson[i + 1].data); // get the next element
 		}
 	});
-
 	const values = Object.values(transaction);
 	const minTransaction = Math.min(values);
 	const maxTransaction = Math.max(values);
 	const avregeTransaction = values.reduce((a, b) => a + b, 0) / values.length;
+	console.log(avregeTransaction);
 	return {
 		min: parseInt(minTransaction),
 		max: parseInt(maxTransaction),
 		avrege: parseInt(avregeTransaction),
+		all: transaction,
 	};
 }

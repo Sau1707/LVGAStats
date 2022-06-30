@@ -77,15 +77,15 @@ export default function lvgastats(props) {
 			</Carousel.Item>
 			<Carousel.Item interval={100000}>
 				<Row className={styles.box}>
-					<div className={styles.speed}>
-						<ChartsPage />
+					<div className={styles.charts}>
+						<ChartsPage data={props.lastMonth.all}/>
 					</div>
 				</Row>
 				<Carousel.Caption>
-					<h3>Second slide label</h3>
+					{/* <h3>Second slide label</h3>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p>
+					</p> */}
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>
