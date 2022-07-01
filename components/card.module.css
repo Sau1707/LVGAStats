@@ -1,0 +1,16 @@
+.card {
+	background: #2a2e35;
+	width: 18rem;
+	color: aliceblue;
+	text-align: center;
+}
+
+
+.image {
+	padding: 20px;
+}
+
+.button {
+	padding: 15px;
+	margin: 0;
+}

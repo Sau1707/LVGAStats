@@ -1,0 +1,26 @@
+.button {
+    padding: 10px 20px !important;
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+.button:hover {
+    background-color: rgb(109, 109, 109);
+}
+
+.buttonActive {
+    padding: 10px 20px !important;
+    background-color: rgb(133, 133, 133);
+}
+
+.buttonActive:hover {
+    background-color: rgb(133, 133, 133);
+}
+
+.buttonActive:focus {
+    background-color: rgb(133, 133, 133);
+}
+
+.buttonGroup {
+    padding: 5px;
+}

@@ -19,8 +19,6 @@ export async function getStaticProps(context) {
 }
 
 import Carousel from "react-bootstrap/Carousel";
-import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
 import { Row } from "react-bootstrap";
 import styles from "../styles/lvgastats.module.css";
 
@@ -29,8 +27,13 @@ import styles from "../styles/lvgastats.module.css";
 */
 import ChartsPage from "../components/chart";
 import Speed from "../components/speed";
+import Buttons from "../components/buttons";
+import { useState } from "react";
 
-export default function lvgastats(props) {
+export default function Lvgastats(props) {
+
+    const [butt, setButt] = useState(0);
+
 	return (
 		<Carousel>
 			<Carousel.Item interval={100000}>
@@ -51,28 +54,6 @@ export default function lvgastats(props) {
 						</a>{" "}
 						to see the dataset
 					</p>
-					<ButtonGroup
-						type='checkbox'
-						size='sm'
-						aria-label='First group'
-						className={styles.buttonGroup}
-					>
-						<Button className={styles.button} variant='secondary'>
-							Last month
-						</Button>
-						<Button className={styles.button} variant='secondary'>
-							Last 3 month
-						</Button>
-						<Button className={styles.button} variant='secondary'>
-							Last 6 month
-						</Button>
-						<Button className={styles.button} variant='secondary'>
-							Last Year
-						</Button>
-						<Button className={styles.button} variant='secondary'>
-							All Time
-						</Button>
-					</ButtonGroup>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item interval={100000}>
@@ -82,7 +63,7 @@ export default function lvgastats(props) {
 					</div>
 				</Row>
 				<Carousel.Caption>
-					<h3>Daily transactions of the last month</h3>
+                    <Buttons onSelect={(i) => {setButt(i)}} names={["last Month", "Last 3 month", "Last 6 month", "Last year", "All Time"]}/>
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>
