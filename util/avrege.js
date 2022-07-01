@@ -22,7 +22,6 @@ export function getDayTransactionCount(dataJson) {
 	const minTransaction = Math.min(values);
 	const maxTransaction = Math.max(values);
 	const avregeTransaction = values.reduce((a, b) => a + b, 0) / values.length;
-	console.log(avregeTransaction);
 	return {
 		min: parseInt(minTransaction),
 		max: parseInt(maxTransaction),

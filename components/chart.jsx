@@ -13,7 +13,7 @@ function Graph(props) {
 				borderColor: "rgba(255, 99, 132, 1)",
 				borderWidth: 0,
 				pointRadius: 0,
-				pointHitRadius: size.width / 30
+				pointHitRadius: size.width / 30,
 			},
 		],
 	};
@@ -25,10 +25,7 @@ function Graph(props) {
 	};
 
 	return (
-		<div>
-			<h2>Bar Example (custom size)</h2>
-			<Line data={data} options={options} redraw/>
-		</div>
+		<Line data={data} options={options} redraw/>
 	);
 }
 

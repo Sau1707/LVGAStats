@@ -82,10 +82,7 @@ export default function lvgastats(props) {
 					</div>
 				</Row>
 				<Carousel.Caption>
-					{/* <h3>Second slide label</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p> */}
+					<h3>Daily transactions of the last month</h3>
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>

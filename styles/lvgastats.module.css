@@ -23,4 +23,5 @@
 
 .charts {
 	text-align: center;
+	transform: scale(0.8);
 }
