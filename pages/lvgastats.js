@@ -6,6 +6,7 @@ import Speed from '../components/speed'
 import Buttons from '../components/buttons'
 import ImageLink from '../components/ImageLink'
 import Image from 'next/image'
+import Head from 'next/head'
 
 import styles from '../styles/lvgastats.module.css'
 
@@ -65,6 +66,9 @@ export default function Lvgastats(props) {
 
     return (
         <>
+            <Head>
+                <title> LVGA Coin Stats </title>
+            </Head>
             <Row>
                 <Col className={styles.title}>
                     <h1> LVGA points statistics </h1>
