@@ -6,36 +6,32 @@ import { useEffect, useState } from 'react'
 export default function Buttons(props) {
     const [active, setActive] = useState(0)
 
-    useEffect(
-        (value) => {
-            props.onSelect(value)
-        },
-        [active]
-    )
+    // edit props on update
+    useEffect(() => {
+        props.onSelect(active)
+    }, [active])
+
     return (
-        <>
-            <ButtonGroup
-                type="checkbox"
-                size="sm"
-                aria-label="First group"
-                className={style.buttonGroup}
-            >
-                {props.names.map((e, i) => {
-                    return (
-                        <ToggleButton
-                            key={i}
-                            className={
-                                active != i ? style.button : style.buttonActive
-                            }
-                            onClick={() => {
-                                setActive(i)
-                            }}
-                        >
-                            {e}
-                        </ToggleButton>
-                    )
-                })}
-            </ButtonGroup>
-        </>
+        <ButtonGroup
+            type="checkbox"
+            size="sm"
+            aria-label="First group"
+            className={style.buttonGroup}
+        >
+            {props.names.map((e, i) => {
+                return (
+                    <ToggleButton
+                        variant="secondary"
+                        key={i}
+                        className={style.button}
+                        onClick={() => {
+                            setActive(i)
+                        }}
+                    >
+                        {e}
+                    </ToggleButton>
+                )
+            })}
+        </ButtonGroup>
     )
 }

@@ -1,0 +1,14 @@
+.logo {
+    border-radius: 100%;
+    overflow: 'hidden';
+}
+
+.a {
+    padding: 10px;
+}
+
+.col {
+    text-align: center;
+    color: aliceblue;
+    width: 100px;
+}

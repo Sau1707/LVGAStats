@@ -1,24 +1,40 @@
 .box {
-	height: 600px;
-	color: aliceblue;
-	text-align: center;
+    height: 600px;
+    color: aliceblue;
+    text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
 .title {
-	height: fit-content;
+    padding-top: 100px;
+    text-align: center;
+    color: aliceblue;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 40px;
 }
 
-.speed {
-	padding-top: 300px;
-	margin-top: -70px;
+.p {
+    font-size: x-large;
 }
 
+.hr {
+    color: aliceblue;
+    padding: 2px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+}
+
+.links {
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+}
 
 .charts {
-	text-align: center;
-	height: 100%;
+    text-align: center;
+    height: 90%;
     width: 80%;
     margin: auto;
 }
