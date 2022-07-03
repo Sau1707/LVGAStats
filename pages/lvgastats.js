@@ -102,7 +102,7 @@ export default function Lvgastats(props) {
                 />
                 <ImageLink
                     href="https://luganolivinglab.ch/it/"
-                    src="livinglab.png"
+                    src="livingLab.png"
                     alt="Lugano Living Lab"
                     desc="Lugano Living Lab"
                 />
